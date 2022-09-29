@@ -1,0 +1,27 @@
+.blog{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: #f9f9f9;
+}
+.mainBlog{
+    width: 1190px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.pagenationContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+@media screen and (max-width:1000px) {
+    .pagenationContainer{
+        width: 100%;
+    }
+    .mainBlog{
+        width: 100%;
+    }
+}

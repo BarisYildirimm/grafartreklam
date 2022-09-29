@@ -1,0 +1,15 @@
+.leftImageUser{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+          padding: 0px 100px 0 100px;
+         
+        img {
+             
+          width: 200px;
+          height: 200px;
+          border-radius: 60%;
+          object-fit: cover;
+        }
+}

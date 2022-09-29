@@ -1,0 +1,28 @@
+.bottomContainerwdwd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .wdwdForm {
+        width: 100%;
+       display: flex;
+       justify-content: space-around ;
+       flex-direction: column;
+       .inputs{
+        display: flex;
+        justify-content: space-around ;
+        input{
+            width: 200px;
+            height: 25px;
+            text-align: center;
+           }
+       }
+       .submitButton{
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        
+       }
+       
+    }
+}

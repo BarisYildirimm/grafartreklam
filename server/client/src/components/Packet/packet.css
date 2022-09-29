@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+}
+
+.packetContainer{
+    width: 100%;
+    min-height: 50rem;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.packetContainer .innerContainer{
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.packetHeader{
+    display: inline;
+   text-align: center;
+   margin-bottom: 20px;
+   
+}
+.packetHeader .packetSlogan{
+    display: inline-block;
+    font-size: 13px;
+    color: #fff;
+    background-color:  #9c04bd;
+    background-image: linear-gradient(to bottom right, #9c04bd, #7104bd);
+    padding: 4px 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.packetHeader .text{
+    font-size: 38px;
+    color: #111;
+    line-height: 1.2;
+    font-weight: lighter;
+}
+.list{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+}
+.list .itemContainer{
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+}
+.list .itemContainer .item{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    transition-duration: .5s;
+}
+.list .itemContainer .item:hover{
+    transition: opacity .5s  ease-in-out;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.list .itemContainer .item .title{
+    width: auto;
+    background-color:  #9c04bd;
+    background-image: linear-gradient(to bottom right, #9c04bd, #7104bd);
+    padding: 12px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.list .itemContainer .item  .priceInfo{
+    padding: 20px 0;
+    width: auto;
+    height: auto;
+    background-color: #ffffff;
+}
+.list .itemContainer .item  .priceInfo .price{
+    font-weight: 600;
+    font-size: 48px;
+    color: #032863;
+}
+.list .itemContainer .item  .priceInfo .slogan{
+    padding: 10px;
+    font-weight: 500;
+    font-size: 15px;
+}
+.list .itemContainer .item .priceInfo .descPacket{
+    opacity: .65; 
+}
+.list .itemContainer .item .spec{
+    padding: 12px;
+    border-top: 1px solid #e9e9e9;
+    line-height: 20px;
+    border-color: #f0f0f0;
+}
+.spec a{
+    color: #f06f1b;
+}
+.spec a:hover{
+    color: black;
+}
+.item .link{
+    width: auto;
+    background-color:  #9c04bd;
+    background-image: linear-gradient(to bottom right, #9c04bd, #7104bd);
+    padding: 12px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all .3s;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

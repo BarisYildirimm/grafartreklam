@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+.contactMapContainer{
+    width: 100%;
+    max-height: 550px;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.contactMapContainer .bottomSection{
+    width: 1190px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    
+}
+.contactMapContainer .bottomSection .innerContainer{
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;;
+}
+.contactMapContainer .bottomSection .innerContainer .blocks{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.contactMapContainer .bottomSection .innerContainer .blocks .contactMapinfoBlock{
+    height: 100%;
+    width: 45rem;
+}
+.contactMapContainer .bottomSection .innerContainer .blocks .contactMapinfoBlock .item{
+    padding: 20px 0;
+    font-weight: 500;
+    border-top: 2px solid #f3f3f3;
+    color: #090909;
+    display: flex;
+    align-items: center;
+    
+    
+}
+.contactMapContainer .bottomSection .innerContainer .blocks .contactMapinfoBlock .item .first{
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.contactMapContainer .bottomSection .innerContainer .blocks .contactMapinfoBlock .item .icon{
+    float: left;
+    border-radius: 50%;
+    border: 5px solid #e2ebf4;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    padding: 5px;
+    background-color: #222;
+    color: #fff;
+}
+.contactMapContainer .bottomSection .innerContainer .blocks .map{
+    margin: -30px 0 20px 30px;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    background: #fff;
+    width: 100%;
+}
+@media screen and (max-width:500px) {
+    .contactMapContainer .bottomSection .innerContainer .blocks .contactMapinfoBlock{
+        height: 100%;
+        width: auto;
+    }
+    .contactMapContainer .bottomSection .innerContainer .blocks{
+        flex-direction: column;
+    }
+    .contactMapContainer .bottomSection .innerContainer .blocks .map{
+        margin:  0%;
+        padding: 0%;
+        margin-bottom: 25px;
+    }
+}

@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.principleContainer{
+    width: 100%;
+    height: auto;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+}
+.principleContainer .innerContainer{
+    max-width: 100%;
+    height: 100%;
+    flex-direction: column; 
+    
+}
+.principleContainer .innerContainer .principleHeader{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
+.principleContainer .innerContainer .principleHeader .principleSlogan{
+    display: inline-block;
+    font-size: 13px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #9c04bd;
+    background-image: linear-gradient(to bottom right, #9c04bd, #7104bd);
+    padding: 4px 8px;
+    margin-bottom: 10px;
+}
+.principleContainer .innerContainer .principleHeader .text{
+    letter-spacing: -1px;
+    font-size: 38px;
+    color: #111;
+    line-height: 1.2;
+    font-weight: lighter;
+    
+}
+.principleContainer .innerContainer .principleCard{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.principleContainer .innerContainer .principleCard .Card{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    margin: 0 15px;
+    padding: 15px;
+    background-color:#f9f9f9;
+    border-bottom: 4px solid #8904bd;
+    overflow: hidden;
+    cursor: pointer;
+}
+.principleContainer .innerContainer .Card:hover{
+    transform: translateY(-4px);
+    transition: all .5s;
+    background-color:  #9c04bd;
+    background-image: linear-gradient(to bottom right, #9c04bd, #7104bd);
+    color: white;
+    border-radius: 8px;
+}
+.Card .cardDesc{
+    width: 100%;
+    height: 20rem;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+.principleContainer .innerContainer .principleCard .Card .icon{
+    width: 54px;
+    height: 54px;
+    margin: 0 0 15px; 
+}
+.principleContainer .innerContainer .principleCard .Card .icon img{
+    border-radius: 50%;
+}
+.principleContainer .innerContainer .principleCard .Card .title{
+    font-weight: bold;
+    font-size: 20px;
+    padding-right: 20px;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+.footer{
+    background-color:  #9c04bd;
+    background-image: linear-gradient(to bottom right, #9c04bd, #7104bd);
+    position:relative;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    bottom: 0%;
+   
+}
+.footer .innerContainer{
+    width: 1190px;
+    height: 365px;
+    display: flex;
+
+}
+.footer .innerContainer .footerAbout,.footerMenu,.footerEtbis,.footerSponsor{
+    min-width: 307.5px;
+    height: 100%;
+    padding: 30px;
+}
+.footer .innerContainer .footerAbout {
+    color: #fff;
+}
+.footer .innerContainer .footerAbout .logoBlock{
+    height: auto;
+    width: 100%;
+    margin-bottom: 5px;
+    
+}
+.footer .innerContainer .footerAbout .logoBlock img{
+    max-width: 200px;
+    height: 30px;
+   object-fit: cover;
+}
+.footer .innerContainer .footerAbout .columnContent{
+    font-size: 14px;
+    line-height: 1.8;
+    width: 50%;
+}
+.footer .innerContainer .footerAbout .titleFooterAbout{
+    display: inline-block;
+    margin-top: 40px;
+    padding-bottom: 15px;
+margin-bottom: 15px;
+border-bottom: 1px solid rgb(240, 111, 27,.5);
+
+
+}
+.footer .innerContainer .footerAbout .safirSocial{
+    list-style: none;
+    display: flex;
+}
+.footer .innerContainer .text{
+font-size: 18px;
+color: #fff;
+font-weight: bold;
+}
+.footer .innerContainer .text p{
+    display: inline-block;
+    padding: 0 0 15px 0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #9c04bd;
+    
+}
+.footer .innerContainer .footerMenu .kurumsalMenu{
+    list-style: none;
+    text-decoration: none;
+    
+}
+.footer .innerContainer .footerMenu .kurumsalMenu a{
+    display: block;
+    padding: 6.5px 0;    
+    color: #fff;
+    font-size: 15px;
+font-weight: 500;
+
+}
+.footer .innerContainer .footerMenu .kurumsalMenu a:hover{
+    transition: .1s all;
+    color: #ddd;
+}
+.footerCopyright{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background-color:  #9c04bd;
+    background-image: linear-gradient(to top right, #9c04bd, #7104bd);
+}
+.whatsapp{
+    z-index: 100;
+}
+@media screen and (max-width:1000px) {
+    .footer{
+        display: none;
+    }
+}

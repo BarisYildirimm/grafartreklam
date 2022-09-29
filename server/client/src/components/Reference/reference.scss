@@ -1,0 +1,50 @@
+.referenceContainer{
+    width:100%;
+    .referenceHeader{
+        margin-bottom: 15px;
+        text-align: center;
+        .referenceSlogan{
+            display: inline-block;
+            font-size: 13px;
+            color: #fff;
+            background-color:  #9c04bd;
+            background-image: linear-gradient(to bottom right, #9c04bd, #7104bd);
+            padding: 4px 8px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .text{
+            letter-spacing: -1px;
+            font-size: 38px;
+            color: #111;
+            line-height: 1.2;
+            font-weight: lighter;
+        }
+    }
+    
+    .referenceInnerContainer{
+        width: 100%;
+        padding: 35px 10px;
+        
+        
+    }
+    .referenceItems{
+            width: 100%;
+			display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+    }
+    .referenceItems img{
+            object-fit: contain;
+            max-height: 150px;
+            width:250px;
+            filter: grayscale(100%);
+            border-radius: 10px;
+            cursor: pointer;
+    }
+    .referenceItems img:hover{
+            filter: none;
+            transition: filter .5s ease-out;
+    }
+
+}

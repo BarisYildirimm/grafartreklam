@@ -1,0 +1,210 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+.navbar{
+    width: 100%;
+    height: 4.2rem;
+    background-color:  #9c04bd;
+    background-image: linear-gradient(to top right, #9c04bd, #7104bd);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+.navbar.fixed{
+    position: fixed;
+    transition: .5s all;
+    top: 0;
+    background-color:  #9c04bd;
+    background-image: linear-gradient(to bottom right, #9c04bd, #7104bd);
+}
+.header-menu{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo {
+    width: 190px;
+    height: 30px;
+    z-index: 999;
+    
+}
+.logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.logo-icon{
+    width: 190px;
+    height: 30px;
+    background-size: 100%;
+}
+.menuGroup{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 8px;
+    
+}
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+}
+.menu-item > a{
+    text-decoration: none;
+    height: 72px;
+    min-width: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    margin-right:20px;
+    font-size: 16px;
+}
+.menu > .menu-item > a:hover{
+    color: #ddd;
+    transition: all .25s;
+}
+
+.menu-icon{
+    width: 18px;
+    height: 18px;
+    color: #ffffff;
+    margin-right:5px;
+}
+.menu > .menu-item > a:hover > .menu-icon{
+    color: #ddd;
+    transition: all .25s;
+}
+.menu-catalog{
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    padding-right: 12px;
+    padding-left: 12px; 
+    display: flex;
+    align-items: center;
+    width: 132px;
+    height: 42px;
+}
+.menu-catalog > a:hover{
+    color: #ddd;
+    transition: all .25s;
+}
+.menu-item > .menu-catalog > a:hover > .menu-icon{
+    color: #ddd;
+    transition: all .25s;
+}
+.menu-catalog > a{
+    height: 42px;
+    width: 100%;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#dropdown{
+    position: relative;
+}
+#dropdown .caret{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #ffffff;
+    transition: 0.3s;
+    margin-left: 3px;
+    margin-top: 1px;
+}
+#dropdown .dropdown-menu{
+    list-style: none;
+    display: block;
+    position: absolute;
+    background: #f9f9f9;
+    min-width: 200px;
+    top: 4.35rem;
+    left: 0;
+    visibility: hidden;
+    color:black;
+    box-shadow: 0px 8px 10px rgba(0,0,0,0.05), -10px 8px 15px rgba(0,0,0,0.05), 10px 8px 15px rgba(0,0,0,0.05);
+    transform: translateY(20px);
+transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+opacity: 0;
+}
+#dropdown .selected:hover .dropdown-menu{
+    visibility: visible;
+    transform: translateY(0px);
+    transition: all 0.3s;
+    opacity: 1;
+   
+}
+.dropdown-menu a{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    text-decoration: none;
+    color: #111;
+    font-size: 14px;
+    border-bottom: 1px solid  #ddd;;
+    
+}
+.dropdown-menu a:hover {
+    background-color:rgb(247, 247, 247);
+}
+.dropdown-icon{
+    color: #111;
+    margin-right: 5px;
+    height: 14px;
+    width: 14px;
+}
+.toggle,
+[id="drop"] {
+	display: none;
+}
+
+@media screen and (max-width:500px) {
+    .navbar{
+        height: auto;
+       
+    }
+    .toggle {
+		display: block;
+        box-shadow: 0px 8px 10px rgba(0,0,0,0.05), -10px 8px 15px rgba(0,0,0,0.05), 10px 8px 15px rgba(0,0,0,0.05);
+		padding:14px 14px;	
+		color:#FFF;
+		font-size:17px;
+		text-decoration:none;
+		border:none;
+        text-align: center
+	}
+    [id="drop"]:checked + ul  {
+		display: block;
+	}
+    .menu{
+        flex-direction: column;
+        display: none;
+    }
+    .header-menu{
+        flex-direction: column;
+        width: 100%;
+    }
+    .menu-item{
+        height: auto;
+    }
+    .menuGroup{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
+

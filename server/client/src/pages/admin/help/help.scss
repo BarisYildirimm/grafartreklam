@@ -1,0 +1,64 @@
+.helpContainer{
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    padding: 10px;
+    margin: 20px;
+    height: 53rem;
+    display: flex;
+    .helpNavbar {
+		background-color: #e6e3e3;
+		height: 100%;
+		width: 15vw;
+		padding: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+		overflow-x: hidden;
+		border-right: 1px solid black;
+        h1 {
+            text-align: center;
+            width: 100%;
+            margin: 0;
+        }
+        ul {
+            list-style-type: none;
+            li {
+                padding: 20px;
+                .nav-link {
+                    text-decoration: none;
+                }
+                .nav-link:link {
+                    color: #1D0BA9;
+                }
+                .nav-link:hover {
+                    color: #000000;
+                }
+                .nav-link:visited {
+                    color: #120765;
+                }
+            }		
+        }
+	}
+    .mainDoc{
+		padding: 10px;
+        overflow-y: scroll;
+        width: 100%;
+        .section{
+            h2{
+                color:#181515;
+                background-color: #e6e3e3;
+                font-size: 200%;
+                padding: 10px;
+                border-radius: 10px;
+            }
+            p{
+                padding: 20px;
+                font-size: 18px;
+                h4{
+                    color:red;
+                }
+            }
+        }
+    }
+
+}
