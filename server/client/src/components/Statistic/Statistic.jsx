@@ -14,7 +14,7 @@ export default function Statistic({statisticsData}){
             <div className="statisticContainer">
             <div className="innerContainer">
                 <div className="statisticHeader">
-                    <a href="/" className="statisticSlogan">SAYILARLA BİZ</a>
+                    <a href="/" className="statisticSlogan">SAYILARLA BİZ.</a>
                     <div className="text">Bugüne Kadar Neler Yaptık? </div>
                 </div>
                 <ScrollTrigger onEnter={()=> setCounterOn(true)} onExit={()=>setCounterOn(false)}>
