@@ -46,7 +46,7 @@ function App() {
             <Route path="iletisim" element={<Contact />} />
             <Route path="paketlerimiz" element={<PacketPage />} />
             <Route path="giris" element={<LogIn />} />
-            <Route path="posts/:id" element={<BlogDetails />}></Route>
+            <Route path="posts/:id" element={<BlogDetails />}/>
             <Route path="ekibimiz" element={<Team />} />
             <Route path="referanslar" element={<ReferencePage />} />
             <Route path="paketler" element={<PacketPage />} />
