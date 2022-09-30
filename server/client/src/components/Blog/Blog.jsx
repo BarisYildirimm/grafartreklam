@@ -14,8 +14,7 @@ export default function Blog(props){
                         <div className="date">{date}</div>
                         <div><p href="#" className="title">{props.title}</p></div>
                         <p className="descBlog">{props.desc}</p>
-                        <a href={`/posts/${props.id}`} className="more">DEVAMINI OKU →</a>
-                        <Button  className="viewButton" onClick={()=>history(`/posts/${props.id}`)}>Bak</Button>
+                        <Button  className="more" onClick={()=>history(`/posts/${props.id}`)}>DEVAMINI OKU →</Button>
                     </div>
                 </div>
      )
