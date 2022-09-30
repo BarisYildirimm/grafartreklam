@@ -11,16 +11,14 @@ import { useDispatch } from 'react-redux';
 import {getPost} from "../../actions/posts"
 import {  Avatar } from "@material-ui/core";
 import ReactPlayer from 'react-player'
-import { useState } from 'react';
 function BlogDetails() {
-    const [view,setView] = useState(0);
     const post = useSelector((state)=>state.posts);
     const dispatch = useDispatch();
     const {id} = useParams();
     
     useEffect(()=>{
       dispatch(getPost(id));
-    },[dispatch])
+    },[id])
     const date = new Date(post.createdAt).toLocaleDateString()
   return (
     <div>
