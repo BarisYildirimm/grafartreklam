@@ -87,7 +87,7 @@ Vizyonumuz dijital medya sektöründe geleneksel anlayıştan uzaklaşıp çağ�
               <div className="aboutImageBlock">
                 <img src={aboutLogo} className="aboutImageBlock-image" alt="Logo"/>
                 <a
-                  href="https://www.youtube.com/watch?v=9W4jed2Z5Pg"
+                  href="https://www.youtube.com/channel/UCTT2RKBjjcpsvpfRBq3avhg"
                   className="aboutVideo"
                 >
                   <BsFillPlayCircleFill className="aboutVideo-icon" />
