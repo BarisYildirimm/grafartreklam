@@ -31,7 +31,7 @@ const authReducer = (state = [], action) => {
         return state.map((user) =>
         user._id === action.payload._id ? action.payload : user
         );
-
+        
     case DELETEUSER:
       return state.filter((user) => user._id === action.payload);
     default:

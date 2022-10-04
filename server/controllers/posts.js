@@ -18,7 +18,6 @@ export const getPost = async (req, res) => {
 export const getPosts = async (req, res) => {
   try {
     const Posts = await Post.find().sort({ createdAt: -1 });
-    console.log(Posts);
     res.status(200).json(Posts);
   } catch (error) {
     res.status(404).json({ message: error.message });

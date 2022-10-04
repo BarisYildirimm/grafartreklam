@@ -2,7 +2,12 @@ import axios from "axios";
 
 const API = axios.create(
   { baseURL: "https://grafartreklam.herokuapp.com/" },
-  { Headers: { "Content-Type": "application/json" } }
+  {
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+  }
 );
 
 export const fetchPosts = () => API.get("/posts");

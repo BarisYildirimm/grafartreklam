@@ -17,6 +17,7 @@ export const getUsers = () => async (dispatch) => {
     console.log(error);
   }
 };
+
 export const getUsersDetails = () => async (dispatch) => {
   try {
     const { data } = await api.fetchUsersDetails();
@@ -59,6 +60,7 @@ export const deleteUser = (id, history) => async (dispatch) => {
     swal.fire("Güncelleme Başarısız!", "Sunucu Hatası", "error");
   }
 };
+
 export const updateUser = (id, user, history) => async (dispatch) => {
   try {
     const { data } = await api.updateUser(id, user);
