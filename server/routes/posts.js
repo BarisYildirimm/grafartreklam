@@ -12,7 +12,7 @@ import auth from "../middleware/auth.js";
 
 const router = express.Router();
 router.get("/posts", getPosts);
-router.get("/posts/:id", getPost);
+router.get("/post/:id", getPost);
 router.post("/haber/ekle", createdPost);
 router.patch("/haber/guncelle/:id", updatePost);
 router.delete("/haber/:id", deletePost);

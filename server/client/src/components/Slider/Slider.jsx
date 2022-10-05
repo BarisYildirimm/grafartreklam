@@ -13,7 +13,6 @@ export default function Slider({data}){
     return(
         <div className="slider">
           <div className="scroll-down">
-
           </div>
           <Swiper
         spaceBetween={30}

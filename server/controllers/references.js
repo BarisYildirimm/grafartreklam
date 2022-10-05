@@ -8,7 +8,6 @@ import url from "url";
 export const getReference = async (req, res) => {
   try {
     const References = await Reference.find();
-    console.log(References);
     res.status(200).json(References);
   } catch (error) {
     res.status(404).json({ message: error.message });

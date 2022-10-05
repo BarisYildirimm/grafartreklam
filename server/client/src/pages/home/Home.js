@@ -35,7 +35,7 @@ function Home() {
   }, [dispatch]);
   return (
     <div className="Home">
-      {!sloganData.length ? (
+      {!referencesData.length? (
         <Loading />
       ) : (
         <div >

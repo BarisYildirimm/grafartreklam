@@ -7,7 +7,6 @@ import url from "url";
 
 export const getPost = async (req, res) => {
   const { id } = req.params;
-  
   try {
     const post = await Post.findById(id);
     res.status(200).json(post);

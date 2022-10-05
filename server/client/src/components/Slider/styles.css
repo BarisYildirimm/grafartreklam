@@ -140,8 +140,11 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 @media screen and (max-width:500px) {
   .slider{
-
+    height: auto;
     bottom: 0px;
-}
+  }
+  .scroll-down{
+    display: none;
+  }
 
 }
