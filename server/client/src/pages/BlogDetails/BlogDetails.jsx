@@ -18,7 +18,7 @@ function BlogDetails() {
     
     useEffect(()=>{
       dispatch(getPost(id));
-    },[id])
+    },[dispatch,id])
     const date = new Date(post.createdAt).toLocaleDateString()
   return (
     <div>
