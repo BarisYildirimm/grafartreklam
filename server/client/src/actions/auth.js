@@ -94,7 +94,7 @@ export const signin = (formData, history) => async (dispatch) => {
         history("/admin");
       });
   } catch (error) {
-    swal.fire("Güncelleme Başarısız!", "Sunucu Hatası", "error");
+    swal.fire("Giriş Başarısız!", "Sunucu Hatası", "error");
   }
 };
 export const signup = (formData, history) => async (dispatch) => {
