@@ -1,4 +1,4 @@
-import React, { useEffect,useState } from "react";
+import React, { useEffect, useState } from "react";
 import Footer from "../../components/Footer/footer";
 import Header from "../../components/Header/Header.jsx";
 import Navbar from "../../components/Navbar/Navbar.jsx";
@@ -12,7 +12,7 @@ import Loading from "../Loading/Loading";
 import { useSelector } from "react-redux";
 import Pagination from "../../components/Pagination/Pagination";
 function Blog() {
-  const [currentPage,setCurrentPage] = useState(1);
+  const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage] = useState(5);
 
   const dispatch = useDispatch();
@@ -23,9 +23,9 @@ function Blog() {
 
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPosts = post.slice(indexOfFirstPost,indexOfLastPost);
-
-  const paginate = (pageNumber)=> setCurrentPage(pageNumber);
+  let currentPosts =  post.slice(indexOfFirstPost, indexOfLastPost);
+  
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
     <div>
@@ -40,13 +40,12 @@ function Blog() {
           <div className="blog">
             <div className="mainBlog">
               <div className="pagenationContainer">
-              <Blogs post={currentPosts}  />
-              <Pagination
-               postsPerPage={postsPerPage} 
-               totalPosts={post.length}
-               paginate={paginate}
-
-              />
+                <Blogs post={currentPosts} />
+                <Pagination
+                  postsPerPage={postsPerPage}
+                  totalPosts={post.length}
+                  paginate={paginate}
+                />
               </div>
               <Aside />
             </div>

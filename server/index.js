@@ -27,7 +27,9 @@ app.use("/slogan", sloganRoutes);
 app.use("/principle", principleRoutes);
 
 const __dirname = path.resolve();
-
+app.get('/favicon.ico', (req, res) => {
+  res.sendFile(path.resolve(__dirname, 'client/public/favicon.ico'));
+});
 if (process.env.NODE_ENV === "production") {
 
   app.use(Express.static(path.join(__dirname, "client/build")));
