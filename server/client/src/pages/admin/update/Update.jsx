@@ -10,7 +10,7 @@ import { useNavigate } from 'react-router-dom';
 import { CircularProgress } from "@material-ui/core";
 
 const Update = ({ title,currentId,setCurrentId }) => {
-    const [user, setUser] = useState(JSON.parse(localStorage.getItem("profile")));
+    const [user] = useState(JSON.parse(localStorage.getItem("profile")));
   
 
   const post = useSelector((state)=> currentId ? state.posts.find((p) => p._id === currentId):0);

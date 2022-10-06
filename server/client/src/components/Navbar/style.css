@@ -175,7 +175,6 @@ opacity: 0;
 @media screen and (max-width:500px) {
     .navbar{
         height: auto;
-       
     }
     .toggle {
 		display: block;

@@ -21,7 +21,7 @@ const New = ({ title }) => {
 
   const history = useNavigate();
   const dispatch = useDispatch();
-  const [user, setUser] = useState(JSON.parse(localStorage.getItem("profile")));
+  const [user] = useState(JSON.parse(localStorage.getItem("profile")));
 
   const uploadImage = async (e) => {
     const file = e.target.files[0];

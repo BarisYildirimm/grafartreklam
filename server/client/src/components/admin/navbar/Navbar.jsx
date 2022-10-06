@@ -1,6 +1,5 @@
 import React,{useState,useEffect} from "react"
 import "./navbar.scss";
-import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import {  Avatar, Button, Typography } from "@material-ui/core";
 import { useDispatch } from "react-redux";
