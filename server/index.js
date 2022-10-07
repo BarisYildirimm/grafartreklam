@@ -19,12 +19,12 @@ app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
 
-app.use("/", postRoutes);
-app.use("/user", userRoutes);
-app.use("/referans", referenceRoutes);
-app.use("/statistic", statisticRoutes);
-app.use("/slogan", sloganRoutes);
-app.use("/principle", principleRoutes);
+app.use("/api", postRoutes);
+app.use("/api/user", userRoutes);
+app.use("/api/referans", referenceRoutes);
+app.use("/api/statistic", statisticRoutes);
+app.use("/api/slogan", sloganRoutes);
+app.use("/api/principle", principleRoutes);
 
 const __dirname = path.resolve();
 if (process.env.NODE_ENV === "production") {

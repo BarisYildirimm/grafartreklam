@@ -8,7 +8,6 @@ import url from "url";
 export const getPrinciple = async (req, res) => {
   try {
     const Principles = await Principle.find();
-    console.log(Principles);
     res.status(200).json(Principles);
   } catch (error) {
     res.status(404).json({ message: error.message });

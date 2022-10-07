@@ -25,7 +25,7 @@ function Reference() {
         <div className="referencePage-container">
           <div className='referencePage-inner'>
           {referencesData.map((item)=>(
-                    <img src={item.selectedFile} alt={item.title}/>
+                    <img key={item._id} src={item.selectedFile} alt={item.title}/>
             ))}
           </div>
         </div>

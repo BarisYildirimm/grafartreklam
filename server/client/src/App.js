@@ -50,7 +50,7 @@ function App() {
             <Route path="referanslar" element={<ReferencePage />} />
             <Route path="paketler" element={<PacketPage />} />
           </Route>
-          <Route path="/post/:id" element={<BlogDetails />}/>
+          <Route exact path="/post/:id" element={<BlogDetails />}/>
             <Route path="/admin" >
             <Route
                   path="yardim"
