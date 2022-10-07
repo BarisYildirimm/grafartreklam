@@ -6,6 +6,7 @@ import { CircularProgress } from "@material-ui/core";
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { createPrinciple } from '../../../actions/principle';
+import TextareaAutosize from "@mui/material/TextareaAutosize"
 import "./addPrinciple.scss"
 
 function AddPrinciple({title}) {
@@ -89,11 +90,13 @@ function AddPrinciple({title}) {
                 </div>
                 <div className="formInput" >
                   <label>Açıklama</label>
-                  <input
+                  <TextareaAutosize
+                   maxRows={2}
+                   aria-label="maximum height"
                    name="desc"
-                   type="text" 
                    value={principleData.desc}
                    onChange={(e)=> setPrincipleData({...principleData,desc:e.target.value})}
+                   style={{ width: "100%",height:"250px" }}
                    placeholder="Açıklama" 
                    />
                 </div>

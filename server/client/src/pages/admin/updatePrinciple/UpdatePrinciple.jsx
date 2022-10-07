@@ -3,6 +3,7 @@ import Navbar from '../../../components/admin/navbar/Navbar';
 import Sidebar from '../../../components/admin/sidebar/Sidebar';
 import DriveFolderUploadOutlinedIcon from "@mui/icons-material/DriveFolderUploadOutlined";
 import { CircularProgress } from "@material-ui/core";
+import TextareaAutosize from "@mui/material/TextareaAutosize"
 import { useNavigate } from 'react-router-dom';
 import { useDispatch,useSelector } from 'react-redux';
 import { updatePrinciple } from '../../../actions/principle';
@@ -89,12 +90,14 @@ function UpdatePrinciple({title,principleId}) {
               </div>
               <div className="formInput" >
                 <label>Açıklama</label>
-                <input
+                <TextareaAutosize
+                 maxRows={2}
+                 aria-label="maximum height"
                  name="desc"
-                 type="text" 
                  value={principleData.desc}
                  onChange={(e)=> setPrincipleData({...principleData,desc:e.target.value})}
                  placeholder="Açıklama" 
+                 style={{ width: "100%",height:"250px" }}
                  />
               </div>
               <div style={{display:"flex"}}>
