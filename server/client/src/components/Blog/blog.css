@@ -104,6 +104,8 @@
     height: 140px;
    background-position: 100% 100%;
    background-size: cover;
+   background-color: rgb(201, 194, 194);
+   border: none;
 }
 @media screen and (max-width:1000px) {
     .blogContainer{

@@ -1,23 +1,22 @@
-.paginationDesign {
-    .pagination{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        list-style: none;
-        padding: 10px;
+.pagination{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    font-size: 1.2rem;
+    gap: 5px;
+    .page-num{
+        padding: 8px 15px;
+        cursor: pointer;
+        border-radius: 3px;
+        font-weight: 400;
     }
-   
-    li{
-        a{
-            text-align: center;
-            line-height: 31px;
-            display: block;
-            width: 35px;
-            height: 35px;
-            transition: background-color .5s;
-            border: 1px solid #ddd;
-        }
-        a:hover{ background-color: #ddd;}
+    .page-num:hover{
+        background-color: #5ab;
+        color: white;
+    }
+    .active{
+        background-color: #5ab;
     }
 }

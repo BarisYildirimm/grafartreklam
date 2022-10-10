@@ -13,6 +13,7 @@ import {  Avatar } from "@material-ui/core";
 import ReactPlayer from 'react-player'
 function BlogDetails() {
     const post = useSelector((state)=>state.posts);
+    
     const dispatch = useDispatch();
     const {id} = useParams();
     
@@ -22,7 +23,6 @@ function BlogDetails() {
     const date = new Date(post.createdAt).toLocaleDateString()
   return (
     <div>
-     
         <div>
           <Header>
             <Navbar />
