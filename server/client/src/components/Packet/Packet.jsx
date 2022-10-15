@@ -44,7 +44,7 @@ export default function Packet(){
                             <div className="item">
                                 <div className="title">Giriş Paketi</div>
                                     <div className="priceInfo">
-                                    <div className="price">2500₺</div>
+                                    <div className="price">2.500₺</div>
                                     <div className="slogan">Giriş için en uygun</div>
                                     <div className="descPacket">Sosyal Medya Paketi</div>
                                 </div>
@@ -71,7 +71,7 @@ export default function Packet(){
                             <div className="item">
                                 <div className="title">Bronz Paket</div>
                                     <div className="priceInfo">
-                                    <div className="price">4000₺</div>
+                                    <div className="price">4.000₺</div>
                                     <div className="slogan">Sosyal Medya Paketi</div>
                                     <div className="descPacket">Sosyal Medya Paketi </div>
                                 </div>
@@ -103,7 +103,7 @@ export default function Packet(){
                                     </div>
                                    </div>
                                     <div className="priceInfo">
-                                    <div className="price">5300₺</div>
+                                    <div className="price">5.300₺</div>
                                     <div className="slogan">Sosyal Medya Paketi</div>
                                     <div className="descPacket">Sosyal Medya Paketi</div>
                                 </div>
@@ -130,7 +130,7 @@ export default function Packet(){
                             <div className="item">
                                 <div className="title">Altın Paket</div>
                                     <div className="priceInfo">
-                                    <div className="price">7500₺</div>
+                                    <div className="price">7.500₺</div>
                                     <div className="slogan">Sosyal Medya Paketi</div>
                                     <div className="descPacket">Sosyal Medya Yönetimi</div>
                                 </div>
@@ -157,7 +157,7 @@ export default function Packet(){
                             <div className="item">
                                 <div className="title">Elmas Paket</div>
                                     <div className="priceInfo">
-                                    <div className="price">15000₺</div>
+                                    <div className="price">15.000₺</div>
                                     <div className="slogan">Sosyal Medya ve web Site Paketi</div>
                                     <div className="descPacket">Sosyal Medya Yönetimi</div>
                                 </div>
@@ -184,7 +184,7 @@ export default function Packet(){
                             <div className="item">
                                 <div className="title">Platinyum Paket</div>
                                     <div className="priceInfo">
-                                    <div className="price">25000₺</div>
+                                    <div className="price">25.000₺</div>
                                     <div className="slogan">Sosyal Medya ve Web Site Paketi</div>
                                     <div className="descPacket">Sosyal Medya Yönetimi</div>
                                 </div>
