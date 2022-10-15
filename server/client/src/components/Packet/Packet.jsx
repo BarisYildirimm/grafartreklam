@@ -1,5 +1,6 @@
 import React from "react";
-import {AiOutlineCheck,AiOutlineClose,AiFillPlusCircle} from "react-icons/ai"
+import {AiOutlineCheck} from "react-icons/ai"
+import {FaCrown} from "react-icons/fa"
 import "./packet.css"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper';
@@ -41,126 +42,167 @@ export default function Packet(){
                             <SwiperSlide>
                             <div className="itemContainer">
                             <div className="item">
-                                <div className="title">Ekonomik Paket</div>
+                                <div className="title">Giriş Paketi</div>
                                     <div className="priceInfo">
-                                    <div className="price">499₺</div>
-                                    <div className="slogan">Başlangıç için en uygun</div>
-                                    <div className="descPacket">1 Aylık Sosyal Medya Paketi</div>
+                                    <div className="price">2500₺</div>
+                                    <div className="slogan">Giriş için en uygun</div>
+                                    <div className="descPacket">Sosyal Medya Paketi</div>
                                 </div>
 
-                                <div className="spec"><AiOutlineCheck/> 10 Sosyal Medya Postu</div>
-                                <div className="spec"><AiOutlineCheck /> 10 Sosyal Medya Story</div>
+                                <div className="spec"><AiOutlineCheck/> 7 Sosyal Medya Postu</div>
+                                <div className="spec"><AiOutlineCheck /> 7 Sosyal Medya Story</div>
+                                <div className="spec"><AiOutlineCheck/> 1 Reels Video</div>
+                                <div className="spec"><AiOutlineCheck/> </div>
+                                <div className="spec"><AiOutlineCheck /> </div>
+                                <div className="spec"><AiOutlineCheck/> </div>
+                                <div className="spec"><AiOutlineCheck/> </div>
+                                <div className="spec"><AiOutlineCheck /> </div>
+                                <div className="spec"><AiOutlineCheck/> </div>
+                                <div className="spec"><AiOutlineCheck/> </div>
+                                <div className="spec"><AiOutlineCheck /> </div>
+                                <div className="spec"><AiOutlineCheck/> </div>
+                                <div className="spec"><AiOutlineCheck/> </div>
+                                <a href="https://wa.me/05415884922"><div className="link">Satın Al</div></a>
+                            </div>
+                        </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                            <div className="itemContainer">
+                            <div className="item">
+                                <div className="title">Bronz Paket</div>
+                                    <div className="priceInfo">
+                                    <div className="price">4000₺</div>
+                                    <div className="slogan">Sosyal Medya Paketi</div>
+                                    <div className="descPacket">Sosyal Medya Paketi </div>
+                                </div>
+
+                                <div className="spec"><AiOutlineCheck/>10 Post</div>
+                                <div className="spec"><AiOutlineCheck/> 10 Story</div>
                                 <div className="spec"><AiOutlineCheck/> 2 Reels Video</div>
                                 <div className="spec"><AiOutlineCheck/> </div>
                                 <div className="spec"><AiOutlineCheck /> </div>
                                 <div className="spec"><AiOutlineCheck/> </div>
-                                <div className="spec"><AiOutlineClose style={{color:"red",fontSize:"20px"}}/>1 Tanıtım Videosu </div>
-                                <a href="https://wa.me/05445235059"><div className="link">Satın Al</div></a>
+                                <div className="spec"><AiOutlineCheck/> </div>
+                                <div className="spec"><AiOutlineCheck/> </div>
+                                <div className="spec"><AiOutlineCheck/> </div>
+                                <div className="spec"><AiOutlineCheck/> </div>
+                                <div className="spec"><AiOutlineCheck/> </div>
+                                <div className="spec"><AiOutlineCheck/> </div>
+                                <div className="spec"><AiOutlineCheck/> </div>
+                                <a href="https://wa.me/05415884922"><div className="link">Satın Al</div></a>
                             </div>
                         </div>
                             </SwiperSlide>
                             <SwiperSlide>
                             <div className="itemContainer">
                             <div className="item">
-                                <div className="title">Giriş Paketi</div>
+                                <div className="title">
+                                    <div className="titleCrown" style={{display:"flex",justifyContent:"center",alignItems:"center"}}>
+                                        <FaCrown style={{color:"yellow",fontSize:"30px",marginRight:"15px"}}/>
+                                        <p> Gümüş Paket</p>
+                                    </div>
+                                   </div>
                                     <div className="priceInfo">
-                                    <div className="price">499$</div>
-                                    <div className="slogan">Başlangıç için en uygun</div>
-                                    <div className="descPacket">Buraya paketle ilgili kısa bir açıklama </div>
+                                    <div className="price">5300₺</div>
+                                    <div className="slogan">Sosyal Medya Paketi</div>
+                                    <div className="descPacket">Sosyal Medya Paketi</div>
                                 </div>
 
-                                <div className="spec"><AiOutlineCheck/> Bu alanda paketle ilgili</div>
-                                <div className="spec"><AiOutlineCheck/> Bir takım bilgileri</div>
-                                <div className="spec"><AiOutlineCheck/> Tik işareti ile</div>
-                                <div className="spec"><AiOutlineClose/>Ya da çarpı işareti ile </div>
-                                <div className="spec"><AiFillPlusCircle/>Ya da tema ikonları ile</div>
-                                <div className="spec"> Ya da simgesiz gösterebilirsiniz.</div>
-                                <div className="spec"><a href="!#"> HTML</a> etiketleri de kullanılabilir.</div>
-                                <a href="https://wa.me/05445235059"><div className="link">Satın Al</div></a>
+                                <div className="spec"><AiOutlineCheck/>14 Post</div>
+                                <div className="spec"><AiOutlineCheck/> 14 Story</div>
+                                <div className="spec"><AiOutlineCheck/> 3 Reels Video</div>
+                                <div className="spec"><AiOutlineCheck/>1 Dronlu Tanıtım Filmi </div>
+                                <div className="spec"><AiOutlineCheck/>Hastag Analizi</div>
+                                <div className="spec"><AiOutlineCheck/>Sosyal Medya Planlaması</div>
+                                <div className="spec"><AiOutlineCheck/>Rakip Analizi</div>
+                                <div className="spec"><AiOutlineCheck/> </div>
+                                <div className="spec"><AiOutlineCheck/> </div>
+                                <div className="spec"><AiOutlineCheck/> </div>
+                                <div className="spec"><AiOutlineCheck/> </div>
+                                <div className="spec"><AiOutlineCheck/> </div>
+                                <div className="spec"><AiOutlineCheck/> </div>
+                                <a href="https://wa.me/05415884922"><div className="link">Satın Al</div></a>
                             </div>
                         </div>
                             </SwiperSlide>
                             <SwiperSlide>
                             <div className="itemContainer">
                             <div className="item">
-                                <div className="title">Giriş Paketi</div>
+                                <div className="title">Altın Paket</div>
                                     <div className="priceInfo">
-                                    <div className="price">499$</div>
-                                    <div className="slogan">Başlangıç için en uygun</div>
-                                    <div className="descPacket">Buraya paketle ilgili kısa bir açıklama metni ekleyebilirsiniz.</div>
+                                    <div className="price">7500₺</div>
+                                    <div className="slogan">Sosyal Medya Paketi</div>
+                                    <div className="descPacket">Sosyal Medya Yönetimi</div>
                                 </div>
 
-                                <div className="spec"><AiOutlineCheck/> Bu alanda paketle ilgili</div>
-                                <div className="spec"><AiOutlineCheck/> Bir takım bilgileri</div>
-                                <div className="spec"><AiOutlineCheck/> Tik işareti ile</div>
-                                <div className="spec"><AiOutlineClose/>Ya da çarpı işareti ile </div>
-                                <div className="spec"><AiFillPlusCircle/>Ya da tema ikonları ile</div>
-                                <div className="spec"> Ya da simgesiz gösterebilirsiniz.</div>
-                                <div className="spec"><a href="!#"> HTML</a> etiketleri de kullanılabilir.</div>
-                                <a href="https://wa.me/05445235059"><div className="link">Satın Al</div></a>
+                                <div className="spec"><AiOutlineCheck/>20 Post</div>
+                                <div className="spec"><AiOutlineCheck/> 20 Story</div>
+                                <div className="spec"><AiOutlineCheck/> 4 Reels Video</div>
+                                <div className="spec"><AiOutlineCheck/>1 Dronlu Adres Videosu </div>
+                                <div className="spec"><AiOutlineCheck/>1 Tanıtım Filmi</div>
+                                <div className="spec"><AiOutlineCheck/>Hastag Analizi</div>
+                                <div className="spec"><AiOutlineCheck/>Sosyal Medya Planlaması</div>
+                                <div className="spec"><AiOutlineCheck/>Rakip Analizi</div>
+                                <div className="spec"><AiOutlineCheck/> </div>
+                                <div className="spec"><AiOutlineCheck/> </div>
+                                <div className="spec"><AiOutlineCheck/> </div>
+                                <div className="spec"><AiOutlineCheck/> </div>
+                                <div className="spec"><AiOutlineCheck/> </div>
+                                <a href="https://wa.me/05415884922"><div className="link">Satın Al</div></a>
                             </div>
                         </div>
                             </SwiperSlide>
                             <SwiperSlide>
                             <div className="itemContainer">
                             <div className="item">
-                                <div className="title">Giriş Paketi</div>
+                                <div className="title">Elmas Paket</div>
                                     <div className="priceInfo">
-                                    <div className="price">499$</div>
-                                    <div className="slogan">Başlangıç için en uygun</div>
-                                    <div className="descPacket">Buraya paketle ilgili kısa bir açıklama metni ekleyebilirsiniz.</div>
+                                    <div className="price">15000₺</div>
+                                    <div className="slogan">Sosyal Medya ve web Site Paketi</div>
+                                    <div className="descPacket">Sosyal Medya Yönetimi</div>
                                 </div>
 
-                                <div className="spec"><AiOutlineCheck/> Bu alanda paketle ilgili</div>
-                                <div className="spec"><AiOutlineCheck/> Bir takım bilgileri</div>
-                                <div className="spec"><AiOutlineCheck/> Tik işareti ile</div>
-                                <div className="spec"><AiOutlineClose/>Ya da çarpı işareti ile </div>
-                                <div className="spec"><AiFillPlusCircle/>Ya da tema ikonları ile</div>
-                                <div className="spec"> Ya da simgesiz gösterebilirsiniz.</div>
-                                <div className="spec"><a href="!#"> HTML</a> etiketleri de kullanılabilir.</div>
-                                <a href="https://wa.me/05445235059"><div className="link">Satın Al</div></a>
+                                <div className="spec"><AiOutlineCheck/>25 Post</div>
+                                <div className="spec"><AiOutlineCheck/> 25 Story</div>
+                                <div className="spec"><AiOutlineCheck/> 4 Reels Video</div>
+                                <div className="spec"><AiOutlineCheck/>1 Dronlu Adres Videosu</div>
+                                <div className="spec"><AiOutlineCheck/>1 Tanıtım Filmi</div>
+                                <div className="spec"><AiOutlineCheck/>Hastag Analizi</div>
+                                <div className="spec"><AiOutlineCheck/>Sosyal Medya planlaması</div>
+                                <div className="spec"><AiOutlineCheck/>Rakip Analizi</div>
+                                <div className="spec"><AiOutlineCheck/>Kurumsal web Site</div>
+                                <div className="spec"><AiOutlineCheck/> </div>
+                                <div className="spec"><AiOutlineCheck/> </div>
+                                <div className="spec"><AiOutlineCheck/> </div>
+                                <div className="spec"><AiOutlineCheck/> </div>
+                                <a href="https://wa.me/05415884922"><div className="link">Satın Al</div></a>
                             </div>
                         </div>
                             </SwiperSlide>
                             <SwiperSlide>
                             <div className="itemContainer">
                             <div className="item">
-                                <div className="title">Giriş Paketi</div>
+                                <div className="title">Platinyum Paket</div>
                                     <div className="priceInfo">
-                                    <div className="price">499$</div>
-                                    <div className="slogan">Başlangıç için en uygun</div>
-                                    <div className="descPacket">Buraya paketle ilgili kısa bir açıklama metni ekleyebilirsiniz.</div>
+                                    <div className="price">25000₺</div>
+                                    <div className="slogan">Sosyal Medya ve Web Site Paketi</div>
+                                    <div className="descPacket">Sosyal Medya Yönetimi</div>
                                 </div>
 
-                                <div className="spec"><AiOutlineCheck/> Bu alanda paketle ilgili</div>
-                                <div className="spec"><AiOutlineCheck/> Bir takım bilgileri</div>
-                                <div className="spec"><AiOutlineCheck/> Tik işareti ile</div>
-                                <div className="spec"><AiOutlineClose/>Ya da çarpı işareti ile </div>
-                                <div className="spec"><AiFillPlusCircle/>Ya da tema ikonları ile</div>
-                                <div className="spec"> Ya da simgesiz gösterebilirsiniz.</div>
-                                <div className="spec"><a href="!#"> HTML</a> etiketleri de kullanılabilir.</div>
-                                <a href="https://wa.me/05445235059"><div className="link">Satın Al</div></a>
-                            </div>
-                        </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                            <div className="itemContainer">
-                            <div className="item">
-                                <div className="title">Giriş Paketi</div>
-                                    <div className="priceInfo">
-                                    <div className="price">499$</div>
-                                    <div className="slogan">Başlangıç için en uygun</div>
-                                    <div className="descPacket">Buraya paketle ilgili kısa bir açıklama metni ekleyebilirsiniz.</div>
-                                </div>
-
-                                <div className="spec"><AiOutlineCheck/> Bu alanda paketle ilgili</div>
-                                <div className="spec"><AiOutlineCheck/> Bir takım bilgileri</div>
-                                <div className="spec"><AiOutlineCheck/> Tik işareti ile</div>
-                                <div className="spec"><AiOutlineClose/>Ya da çarpı işareti ile </div>
-                                <div className="spec"><AiFillPlusCircle/>Ya da tema ikonları ile</div>
-                                <div className="spec"> Ya da simgesiz gösterebilirsiniz.</div>
-                                <div className="spec"><a href="!#"> HTML</a> etiketleri de kullanılabilir.</div>
-                                <a href="https://wa.me/05445235059"><div className="link">Satın Al</div></a>
+                                <div className="spec"><AiOutlineCheck/>30 Post</div>
+                                <div className="spec"><AiOutlineCheck/> 30 Story</div>
+                                <div className="spec"><AiOutlineCheck/>8 Reels Video</div>
+                                <div className="spec"><AiOutlineCheck/>1 Dronlu Adres Videosu</div>
+                                <div className="spec"><AiOutlineCheck/> 1 Tanıtım Filmi</div>
+                                <div className="spec"><AiOutlineCheck/>1 Skeç Video</div>
+                                <div className="spec"><AiOutlineCheck/>Hastag Analizi</div>
+                                <div className="spec"><AiOutlineCheck/> Sosyal Medya Planlaması</div>
+                                <div className="spec"><AiOutlineCheck/>Rakip Analizi</div>
+                                <div className="spec"><AiOutlineCheck/>Kurumsal Web Site</div>
+                                <div className="spec"><AiOutlineCheck/> Hosting+Domain</div>
+                                <div className="spec"><AiOutlineCheck/>CEO Hizmeti</div>
+                                <div className="spec"><AiOutlineCheck/> Sponsorlu Reklam Takibi</div>
+                                <a href="https://wa.me/05415884922"><div className="link">Satın Al</div></a>
                             </div>
                         </div>
                             </SwiperSlide>
