@@ -18,14 +18,14 @@ import "./home.css";
 import { useSelector } from "react-redux";
 import { getReference } from "../../actions/references.js";
 import { getStatistic } from "../../actions/statistic.js";
-import {getSlogan} from "../../actions/slogan.js"
+import { getSlogan } from "../../actions/slogan.js";
 import { getPrinciple } from "../../actions/principle.js";
 function Home() {
   const dispatch = useDispatch();
-  const referencesData = useSelector((state)=>state.references);
-  const statisticsData = useSelector((state)=>state.statistic);
-  const sloganData = useSelector((state)=>state.slogan);
-  const principleData = useSelector((state)=>state.principle);
+  const referencesData = useSelector((state) => state.references);
+  const statisticsData = useSelector((state) => state.statistic);
+  const sloganData = useSelector((state) => state.slogan);
+  const principleData = useSelector((state) => state.principle);
 
   useEffect(() => {
     dispatch(getReference());
@@ -35,11 +35,10 @@ function Home() {
   }, [dispatch]);
   return (
     <div className="Home">
-      {!referencesData.length? (
+      {!referencesData.length ? (
         <Loading />
       ) : (
-        <div >
-
+        <div>
           <Header>
             <Navbar />
             <Slider data={sloganData} />
@@ -48,13 +47,19 @@ function Home() {
             <div className="innerContainer">
               <div className="aboutInfoBlock">
                 <div className="slogan">Hakkımızda</div>
-                <div className="text">
-                 GRAFART REKLAM
-                </div>
+                <div className="text">GRAFART REKLAM</div>
                 <p>
-                Grafart Reklam olarak Isparta,Antalya,İzmir bölgeleri başta olmak üzere tüm Türkiye’de yerel ve kurumsal firmalara internet reklamcılığı,sosyal medya yönetimi,web site tasarımı,tanıtım filmleri,reklam filmleri,fotoğraf çekimleri hizmetlerini sunuyoruz.
-Misyonumuz iş birliği yaptığımız işletmeler ve kurumları dijital dünyada ön plana çıkartacak profesyonel ve akıllıca tasarlanmış görsel materyaller kullanılarak müşteri potansiyelini ve etkisini arttırmaktır.
-Vizyonumuz dijital medya sektöründe geleneksel anlayıştan uzaklaşıp çağın getirdiği teknoloji ve yenilikçi fikirleri harmanlayarak akılda kalıcı, fark yaratan içerikler sunmak.
+                  Grafart Reklam olarak Isparta,Antalya,İzmir bölgeleri başta
+                  olmak üzere tüm Türkiye’de yerel ve kurumsal firmalara
+                  internet reklamcılığı,sosyal medya yönetimi,web site
+                  tasarımı,tanıtım filmleri,reklam filmleri,fotoğraf çekimleri
+                  hizmetlerini sunuyoruz. Misyonumuz iş birliği yaptığımız
+                  işletmeler ve kurumları dijital dünyada ön plana çıkartacak
+                  profesyonel ve akıllıca tasarlanmış görsel materyaller
+                  kullanılarak müşteri potansiyelini ve etkisini arttırmaktır.
+                  Vizyonumuz dijital medya sektöründe geleneksel anlayıştan
+                  uzaklaşıp çağın getirdiği teknoloji ve yenilikçi fikirleri
+                  harmanlayarak akılda kalıcı, fark yaratan içerikler sunmak.
                 </p>
                 <ul>
                   <li>
@@ -85,7 +90,11 @@ Vizyonumuz dijital medya sektöründe geleneksel anlayıştan uzaklaşıp çağ�
               </div>
 
               <div className="aboutImageBlock">
-                <img src={aboutLogo} className="aboutImageBlock-image" alt="Logo"/>
+                <img
+                  src={aboutLogo}
+                  className="aboutImageBlock-image"
+                  alt="Logo"
+                />
                 <a
                   href="https://www.youtube.com/channel/UCTT2RKBjjcpsvpfRBq3avhg"
                   className="aboutVideo"
@@ -96,7 +105,7 @@ Vizyonumuz dijital medya sektöründe geleneksel anlayıştan uzaklaşıp çağ�
             </div>
           </div>
           <Services />
-          <Principles principleData={principleData}/>
+          <Principles principleData={principleData} />
           <Statistic statisticsData={statisticsData} />
           <div className="contactContainer">
             <div className="innerContainer">
@@ -119,7 +128,7 @@ Vizyonumuz dijital medya sektöründe geleneksel anlayıştan uzaklaşıp çağ�
               </div>
             </div>
           </div>
-          <Reference referencesData={referencesData}/>
+          <Reference referencesData={referencesData} />
           <Packet />
           <div className="topSeciton">
             <div className="contactMapHeader">
@@ -134,10 +143,7 @@ Vizyonumuz dijital medya sektöründe geleneksel anlayıştan uzaklaşıp çağ�
           </div>
           <ContactMap />
           <Footer />
-         
-      
         </div>
-
       )}
     </div>
   );
