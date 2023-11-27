@@ -1,7 +1,5 @@
 # grafartreklam
 
-# Project Name
-
 Description of your project.
 
 ## Getting Started
