@@ -1,5 +1,5 @@
 # grafartreklam
-grafartreklam web sitesi
+grafartreklam web site
 
 ## Getting Started
 
