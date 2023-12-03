@@ -1,6 +1,5 @@
 # grafartreklam
-
-Description of your project.
+grafartreklam web sitesi
 
 ## Getting Started
 
@@ -61,11 +60,6 @@ These instructions will help you set up and run the project on your local machin
     ```
 
 3. **Open your browser and go to [http://localhost:3000](http://localhost:3000) to view the client application.**
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system.
-
 ## Built With
 
 - [Node.js](https://nodejs.org/)
@@ -73,16 +67,5 @@ Add additional notes about how to deploy this on a live system.
 - [MongoDB](https://www.mongodb.com/)
 - [Amazon S3](https://aws.amazon.com/s3/)
 
-## Contributing
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc.
